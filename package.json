@@ -2,7 +2,6 @@
   "name": "@etc/shared-biome-rules",
   "type": "module",
   "version": "0.1.0",
-  "private": true,
   "devDependencies": {
     "@biomejs/biome": "1.9.4"
   },
