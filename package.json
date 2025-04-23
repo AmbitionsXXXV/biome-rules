@@ -1,0 +1,12 @@
+{
+  "name": "@etc/biome-rules",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  },
+  "exports": {
+    "./react": "./rules/react/biome.jsonc"
+  }
+}
