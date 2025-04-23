@@ -1,5 +1,5 @@
 {
-  "name": "@etc/biome-rules",
+  "name": "@etc/shared-biome-rules",
   "type": "module",
   "version": "0.1.0",
   "private": true,
