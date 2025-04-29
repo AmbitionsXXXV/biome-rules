@@ -54,7 +54,8 @@ You can further customize the rules in your own configuration file by overriding
 1. Install Biome and the shared config:
 
    ```bash
-   npm install @biomejs/biome etc-shared-biome-rules
+   pnpm add --save-dev --save-exact @biomejs/biome
+   pnpm add etc-shared-biome-rules -D
    ```
 
 2. Create or update your `biome.json`:
