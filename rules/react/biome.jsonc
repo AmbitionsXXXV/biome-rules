@@ -7,30 +7,10 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
-			"complexity": {
-				"noForEach": "off",
-				"noBannedTypes": "off",
-				"useLiteralKeys": "off"
-			},
-			"a11y": {
-				"useButtonType": "off",
-				"useValidAnchor": "off",
-				"useMediaCaption": "off",
-				"noSvgWithoutTitle": "off",
-				"useSemanticElements": "off",
-				"useKeyWithClickEvents": "off",
-				"useFocusableInteractive": "off"
-			},
 			"correctness": {
 				"noEmptyPattern": "off",
 				"noUnusedVariables": "error",
-				"useExhaustiveDependencies": "off"
-			},
-			"suspicious": {
-				"noConsoleLog": "warn",
-				"noExplicitAny": "off",
-				"noImplicitAnyLet": "off",
-				"noAssignInExpressions": "off"
+				"useExhaustiveDependencies": "info"
 			},
 			"style": {
 				"useImportType": "off",
@@ -43,11 +23,11 @@
 			},
 			"nursery": {
 				"useSortedClasses": {
-					"level": "error",
+					"level": "warn",
 					"fix": "safe",
 					"options": {
 						"attributes": ["className"],
-						"functions": ["cn"]
+						"functions": ["clsx", "cva", "cn"]
 					}
 				}
 			}
@@ -70,6 +50,10 @@
 	},
 	"files": {
 		"ignore": [
+			"src-tauri",
+			".nuxt",
+			".next",
+			".vscode",
 			"**/node_modules",
 			"**/dist",
 			"**/build",
