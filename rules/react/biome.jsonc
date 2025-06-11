@@ -1,8 +1,7 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-	"organizeImports": {
-		"enabled": true
-	},
+	"root": false,
+	"$schema": "https://biomejs.dev/schemas/2.0.0-beta.6/schema.json",
+	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -16,10 +15,21 @@
 				"useImportType": "off",
 				"noParameterAssign": "off",
 				"noNegationElse": "error",
-				"useShorthandArrayType": "error",
 
 				"noNonNullAssertion": "off",
-				"useSelfClosingElements": "off"
+				"useSelfClosingElements": "off",
+				"useAsConstAssertion": "error",
+				"useDefaultParameterLast": "error",
+				"useEnumInitializers": "error",
+				"useSingleVarDeclarator": "error",
+				"noUnusedTemplateLiteral": "error",
+				"useNumberNamespace": "error",
+				"noInferrableTypes": "error",
+				"noUselessElse": "error",
+				"useConsistentArrayType": {
+					"level": "error",
+					"options": { "syntax": "shorthand" }
+				}
 			},
 			"nursery": {
 				"useSortedClasses": {
@@ -49,16 +59,17 @@
 		}
 	},
 	"files": {
-		"ignore": [
-			"src-tauri",
-			".nuxt",
-			".next",
-			".vscode",
-			"**/node_modules",
-			"**/dist",
-			"**/build",
-			"**/.react-router",
-			"**/tsconfig.*.json"
+		"includes": [
+			"**",
+			"!**/src-tauri",
+			"!**/.nuxt",
+			"!**/.next",
+			"!**/.vscode",
+			"!**/node_modules",
+			"!**/dist",
+			"!**/build",
+			"!**/.react-router",
+			"!**/tsconfig.*.json"
 		]
 	}
 }
