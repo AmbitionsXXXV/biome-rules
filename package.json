@@ -1,12 +1,14 @@
 {
 	"name": "etc-shared-biome-rules",
 	"type": "module",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"devDependencies": {
 		"@biomejs/biome": "2.0.0-beta.6"
 	},
 	"exports": {
 		"./react": "./rules/react/biome.jsonc"
 	},
-	"files": ["rules"]
+	"files": [
+		"rules"
+	]
 }
